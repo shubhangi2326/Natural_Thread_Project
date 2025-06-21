@@ -1,0 +1,157 @@
+.newsletter-container {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 300px;
+  /* margin-right: 20px; */
+}
+
+.left-section h1 {
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.left-section p {
+  width: 70%;
+  margin: 20px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.view-more {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #eee;
+}
+
+.right-section {
+  background-color: #b9f9c4;
+  padding: 30px;
+  border-radius: 25px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.right-section h2 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.right-section .quote {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+}
+
+.newsletter-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.newsletter-form label span {
+  color: red;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.recaptcha-mock {
+  background: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.recaptcha-mock .checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+}
+
+.recaptcha-mock img {
+  height: 30px;
+  margin-left: auto;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.privacy-note {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .newsletter-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+  .left-section {
+    width: 100%;
+    margin-right: 0;
+  }
+  .left-section p {
+    width: 90%;
+    max-width: 500px;
+  }
+  .right-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter-container {
+    padding: 20px 15px;
+  }
+  .left-section h1,
+  .right-section h2 {
+    font-size: 28px;
+  }
+  .right-section {
+    padding: 25px;
+  }
+}

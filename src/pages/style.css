@@ -1,0 +1,195 @@
+/* src/pages/Contact.css */
+.contact-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-info-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 80px; */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  max-width: 250px;
+}
+
+.contact-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 15px;
+  color: #222;
+}
+
+.contact-box p strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* <---------------------------------> */
+/* About css */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 20px;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.store-intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+.intro{
+  display: flex;
+  gap: 40px;
+}
+
+.store-image {
+  flex: 1 1 300px;
+}
+
+.store-image img {
+  width: 100%;
+  max-width: 500px;
+  margin-top:100px;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.store-text {
+  flex: 2 1 400px;
+}
+
+.store-text h2 {
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 50px;
+  color: #333;
+  text-align: center;
+}
+
+.store-text p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #444;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #c4bebed7;
+}
+
+.social-share {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.social-share h3 {
+  /* text-align:center; */
+  margin-bottom: 10px;
+  margin-right: 30px ;
+  font-weight: bold;
+}
+
+.social-share .icons a {
+  margin: 0 6px;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-share .icons a:nth-child(1) {
+  background: #3b5998;
+} /* Facebook */
+.social-share .icons a:nth-child(2) {
+  background: #00acee;
+} /* Twitter */
+.social-share .icons a:nth-child(3) {
+  background: #bd081c;
+} /* Pinterest */
+.social-share .icons a:nth-child(4) {
+  background: #0e76a8;
+} /* LinkedIn */
+.social-share .icons a:nth-child(5) {
+  background: #0088cc;
+} /* Telegram */
+
+.social-share .icons a:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .contact-info-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .store-image img {
+    margin-top: 0;
+  }
+  .store-text h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .social-share h3 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 25px 15px;
+  }
+  .store-intro {
+    gap: 30px;
+  }
+  .store-text h2 {
+    font-size: 24px;
+  }
+  .contact-info-section {
+    padding: 30px 15px;
+  }
+}

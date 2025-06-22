@@ -1,86 +1,77 @@
-// import React from 'react';
-// import { NavLink } from 'react-router-dom';
-// import './Navbar.css'; 
-// import logo from '../../assets/NT-logo.png'
-// import { FaAngleDown } from "react-icons/fa";
- 
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <div className="navbar-left">
-//         <NavLink to="/" className="nav-link">Home</NavLink>
-//         <div className="dropdown">
-//           <NavLink to="/shop" className="nav-link">Shop</NavLink>
-        
-//         </div>
-//         <NavLink to="/blog" className="nav-link">Blog</NavLink>
-//         <NavLink to="/contact" className="nav-link">Contact Us</NavLink>
-//         <NavLink to="/about" className="nav-link">About Us</NavLink>
-//       </div>
-
-//       <div className="navbar-center">
-//           <img src={logo} alt="Logo" className="logo" />
-//       </div>
-
-//       <div className="navbar-right">
-//         <hr/>
-//         <NavLink to="/login" className="nav-link">Login / Register</NavLink>
-//         <NavLink to="/cart" className="nav-link">0 / ₹0.00</NavLink>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './Navbar.css'; // Aapki original CSS file waise hi rahegi
-import logo from '../../assets/NT-logo.png';
-// import { FaAngleDown } from "react-icons/fa";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+import logo from "../../assets/NT-logo.png";
 
 const Navbar = () => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+  const handleCloseMenu = () => setIsNavCollapsed(true);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar sticky-top">
       <div className="container">
-        
-        {/* Logo on the left */}
         <NavLink to="/" className="navbar-brand">
-          <img src={logo} alt="Logo" className="logo" />
+          <img src={logo} alt="Nature Thread Logo" className="logo" />
         </NavLink>
 
-        {/* Mobile view ke liye Hamburger Menu Button */}
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
+          onClick={handleNavCollapse}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Saare links ab is collapsible div me hain */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          
-          {/* Main navigation links (Centered) */}
-          {/* KEY CHANGE: 'gap-3' class add ki gayi hai items ke beech me space ke liye. */}
-          <div className="navbar-nav mx-auto gap-3">
-            <NavLink to="/" className="nav-link">Home</NavLink>
-            <NavLink to="/shop" className="nav-link">Shop</NavLink>
-            <NavLink to="/blog" className="nav-link">Blog</NavLink>
-            <NavLink to="/contact" className="nav-link">Contact Us</NavLink>
-            <NavLink to="/about" className="nav-link">About Us</NavLink>
+        <div
+          className={`${
+            isNavCollapsed ? "collapse" : ""
+          } navbar-collapse justify-content-between`}
+          id="navbarNav"
+        >
+          {!isNavCollapsed && (
+            <div className="d-flex justify-content-end d-lg-none mb-3">
+              <button
+                type="button"
+                className="btn-close"
+                aria-label="Close"
+                onClick={handleCloseMenu}
+              ></button>
+            </div>
+          )}
+
+          <div className="navbar-nav mx-auto gap-lg-4">
+            <NavLink to="/" className="nav-link" onClick={handleCloseMenu}>
+              Home
+            </NavLink>
+            <NavLink to="/shop" className="nav-link" onClick={handleCloseMenu}>
+              Shop
+            </NavLink>
+            <NavLink to="/blog" className="nav-link" onClick={handleCloseMenu}>
+              Blog
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="nav-link"
+              onClick={handleCloseMenu}
+            >
+              Contact Us
+            </NavLink>
+            <NavLink to="/about" className="nav-link" onClick={handleCloseMenu}>
+              About Us
+            </NavLink>
           </div>
 
-          {/* Login/Cart links on the right */}
           <div className="navbar-nav">
-            <NavLink to="/login" className="nav-link">Login / Register</NavLink>
-            <NavLink to="/cart" className="nav-link">0 / ₹0.00</NavLink>
+            <NavLink to="/login" className="nav-link" onClick={handleCloseMenu}>
+              Login / Register
+            </NavLink>
           </div>
-
         </div>
       </div>
     </nav>

@@ -1,5 +1,3 @@
-// src/Components/TeamSection/TeamSection.jsx
-
 import React from "react";
 import "./TeamSection.css";
 import member1 from "../../assets/team-member-1.jpg";

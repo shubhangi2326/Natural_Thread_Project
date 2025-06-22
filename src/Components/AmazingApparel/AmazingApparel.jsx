@@ -21,10 +21,8 @@ const AmazingApparel = ({autoplayDelay = 3000, showNavigation = true, showPagina
       <div className="right">
         <div className="apparel-carousel">
           <Swiper
-            // modules={[Navigation]}
             slidesPerView={3}
             spaceBetween={20}
-            // navigation
             modules={[Navigation, Autoplay, Pagination]}
             loop={true}
             navigation={showNavigation}

@@ -77,7 +77,6 @@
   transform: scale(1.1);
 }
 
-/* Specific brand background colors */
 .facebook {
   background-color: #3b5998;
 }
@@ -91,7 +90,7 @@
 }
 
 .instagram {
-  background-color: #8a3ab9; /* Close to Instagram's gradient base */
+  background-color: #8a3ab9; 
 }
 @media (max-width: 768px) {
   .team-section {

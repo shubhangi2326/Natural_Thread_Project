@@ -11,7 +11,6 @@ const BottomWearBanner = () => {
         className="banner-img"
       />
 
-      {/* Read More Button (Left) */}
       <button className="read-more-btn">READ MORE</button>
     </div>
   );

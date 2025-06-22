@@ -1,39 +1,31 @@
 .carousel-container {
-    width: 98%;
-    overflow: hidden;
-    margin: 20px auto;
-  }
+  width: 100%;
+  position: relative;
+}
+
+.mySwiper {
+  width: 100%;
+  height: auto; 
+}
+
+.carousel-image {
+  display: block;
+  width: 100%; 
+  height: auto; 
   
-  .carousel-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-/* Optional: On hover effect */
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #555;         /* hover color */
-  transform: scale(1.1);
+  object-fit: cover; 
 }
 
-/* Target the SVG arrow icon inside it */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 20px; 
-  color: black;
-  font-weight: 800;
-}
-@media (max-width: 768px) {
-  .carousel-container {
-    width: 100%;
-    margin: 15px 0;
-  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-color: #000;
 }
 
-@media (max-width: 480px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 16px;
+@media (max-width: 767.98px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 22px;
   }
 }

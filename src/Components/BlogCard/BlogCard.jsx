@@ -1,4 +1,3 @@
-// src/components/BlogCard.js
 import React from "react";
 import "./BlogCard.css";
 import { FaUserAlt, FaRegCommentDots, FaShareAlt } from "react-icons/fa";

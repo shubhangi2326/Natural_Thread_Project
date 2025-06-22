@@ -1,15 +1,20 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import './Carousel.css'; 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./Carousel.css";
 
-const Carousel = ({ slides, height = '400px', autoplayDelay = 3000, showNavigation = true, showPagination = true }) => {
+const Carousel = ({
+  slides,
+  autoplayDelay = 3000,
+  showNavigation = true,
+  showPagination = true,
+}) => {
   return (
-    <div className="carousel-container" style={{ height }}>
+    <div className="carousel-container">
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         loop={true}
@@ -20,7 +25,11 @@ const Carousel = ({ slides, height = '400px', autoplayDelay = 3000, showNavigati
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <img src={slide.image} alt={slide.altText || `Slide ${index + 1}`} className="carousel-image" />
+            <img
+              src={slide.image}
+              alt={slide.altText || `Slide ${index + 1}`}
+              className="carousel-image"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

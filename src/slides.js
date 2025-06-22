@@ -66,24 +66,3 @@ export const PersonalCare_slides = [
 ]
 
 
-
-
-//   import Carousel from '../components/Carousel';
-
-// function Home() {
-//   return (
-//     <div>
-//       <Carousel slides={homeBannerSlides} height="600px" autoplayDelay={4000} />
-//       {/* Other sections */}
-//     </div>
-//   );
-// }
-
-// function TestimonialsSection() {
-//   return (
-//     <div>
-//       <h2>What Our Customers Say</h2>
-//       <Carousel slides={testimonialSlides} height="400px" autoplayDelay={5000} showNavigation={false} />
-//     </div>
-//   );
-// }

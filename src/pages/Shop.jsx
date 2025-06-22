@@ -1,6 +1,4 @@
 import React from 'react';
-
-// आपकी सभी इमेज यहाँ इम्पोर्ट की गई हैं
 import image1 from '../assets/men1.png';
 import image2 from '../assets/men2.png';
 import image3 from '../assets/men3.png';
@@ -27,30 +25,24 @@ function Shop() {
     <div className="container py-5">
       <h1 className="text-center mb-5">Our Products</h1>
       
-      {/* g-4 क्लास कार्ड के बीच में गैप देगी */}
       <div className="row g-4">
         {productsData.map(product => (
-          // रिस्पॉन्सिव कॉलम क्लास
           <div className="col-lg-3 col-md-4 col-sm-6" key={product.id}>
             
-            {/* Bootstrap क्लास का उपयोग करके डिज़ाइन किया गया कार्ड */}
-            {/* h-100: समान ऊंचाई, shadow: शैडो, rounded-4: गोल किनारे, border-0: बॉर्डर हटाना */}
-            <div className="card h-100 shadow rounded-4 border-0">
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="ratio ratio-4x3">
+                <img 
+                  src={product.image} 
+                  className="card-img-top" 
+                  alt={product.title} 
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
               
-              <img 
-                src={product.image} 
-                className="card-img-top" 
-                alt={product.title} 
-                style={{ height: '220px', objectFit: 'cover' }} // सभी इमेज को एक समान ऊंचाई देने के लिए
-              />
-              
-              {/* d-flex और flex-column का उपयोग ताकि बटन नीचे रहे */}
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title">{product.title}</h5>
-                <p className="card-text">{product.description}</p>
-                
-                {/* mt-auto बटन को कार्ड के निचले हिस्से में धकेलता है */}
-                <a href="#" className="btn btn-primary mt-auto">Buy Now</a>
+              <div className="card-body text-center d-flex flex-column">
+                <h5 className="card-title fs-6">{product.title}</h5>
+                <p className="card-text small text-muted">{product.description}</p>
+                <a href="#" className="btn btn-outline-dark mt-auto">View Product</a>
               </div>
             </div>
           </div>

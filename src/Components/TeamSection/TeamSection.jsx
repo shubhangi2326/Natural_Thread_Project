@@ -1,7 +1,7 @@
 import React from "react";
 import "./TeamSection.css";
 import member1 from "../../assets/team-member-1.jpg";
-import member2 from "../../assets/team-member-1.jpg";
+import member2 from "../../assets/team-member-2.png";
 import member3 from "../../assets/team-member-2.jpg";
 import member4 from "../../assets/team-member-3.jpg";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
@@ -13,18 +13,18 @@ const teamData = [
     img: member1,
   },
   {
-    name: "Aviana Plummer",
-    title: "CEO / FOUNDER",
+    name: "Purvi Sharma",
+    title: "Lead Developer",
     img: member2,
   },
   {
     name: "Braydon Wilkerson",
-    title: "CEO / FOUNDER",
+    title: "Head of Design",
     img: member3,
   },
   {
     name: "Kristin Watson",
-    title: "CEO / FOUNDER",
+    title: "Marketing Director",
     img: member4,
   },
 ];

@@ -1,13 +1,12 @@
 import React from "react";
-import "./Footer.css";
-import logo from "../../assets/NT-logo.png";
-import instagram from "../../assets/instagram.svg";
-import youtub from "../../assets/youtub.svg";
-import whatapp from "../../assets/whatapp.svg";
-import facebook from "../../assets/facebook.svg";
+import logo from "../assets/NT-logo.png";
+import instagram from "../assets/instagram.svg";
+import youtub from "../assets/youtub.svg";
+import whatapp from "../assets/whatapp.svg";
+import facebook from "../assets/facebook.svg";
 import { Link } from "react-router-dom";
-import certificates from "../../assets/certificate.png";
-import payment from "../../assets/payment.png";
+import certificates from "../assets/certificate.png";
+import payment from "../assets/payment.png";
 
 const Footer = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
-import "./ContactPage.css";
-import { faqs } from "../../contact";
+import { faqs } from "../contact";
 
 const ContactPage = () => {
   return (

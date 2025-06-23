@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
-import logo from "../../assets/NT-logo.png";
+import logo from "../assets/NT-logo.png";
 
 const Navbar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);

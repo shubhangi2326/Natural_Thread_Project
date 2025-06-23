@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import HeroBanner from "../assets/about.png";
 import StoreImage from "../assets/nature-about.png";
-import TeamSection from "../Components/TeamSection/TeamSection";
+import TeamSection from "../Components/TeamSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,

@@ -4,7 +4,7 @@ import bannerImage from "../assets/nature-thread-banner.jpg";
 import location from "../assets/location.svg";
 import message from "../assets/message.svg";
 import contact from "../assets/contact.svg";
-import ContactPage from "../Components/ContactPage/ContactPage";
+import ContactPage from "../Components/ContactPage";
 
 const Contact = () => {
   return (

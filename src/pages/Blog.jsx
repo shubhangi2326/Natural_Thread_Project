@@ -1,7 +1,7 @@
 import React from 'react'
 import blogData from '../blogData';
 
-import BlogCard from '../Components/BlogCard/BlogCard';
+import BlogCard from '../Components/BlogCard';
 
 const Blog = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../../assets/Nt-banner.png'
+import banner from '../assets/Nt-banner.png'
 
 const WithInNatureBanner = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
-import "./FashionShowcase.css";
-import image from "../../assets/image_one.jpeg";
+import image from "../assets/image_one.jpeg";
 
 const FashionShowcase = () => {
   return (

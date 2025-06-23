@@ -3,25 +3,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./GentlemenSlides.css";
-import { gentlemenSlides } from "../../slides";
+import { Apparel_slides } from "../slides";
 
-const GentlemenSlides = ({
+const AmazingApparel = ({
   autoplayDelay = 3000,
   showNavigation = true,
   showPagination = true,
 }) => {
   return (
-    <div className="gentlemen-section">
-      <div className="gentlemen-text">
+    <div className="amazing-apparel-section">
+      <div className="apparel-text">
         <h2>
-          Gentlemen’s <br />
+          Amazing
+          <br />
           Apparel
         </h2>
       </div>
 
       <div className="right">
-        <div className="carousel-wrapper">
+        <div className="apparel-carousel">
           <Swiper
             slidesPerView={3}
             spaceBetween={20}
@@ -32,12 +32,12 @@ const GentlemenSlides = ({
             autoplay={{ delay: autoplayDelay }}
             className="mySwiper"
           >
-            {gentlemenSlides.map((slide, idx) => (
+            {Apparel_slides.map((slide, idx) => (
               <SwiperSlide key={idx}>
                 <img
                   src={slide.image}
                   alt={`Slide ${idx}`}
-                  className="personal-img"
+                  className="amazing-img"
                 />
               </SwiperSlide>
             ))}
@@ -48,4 +48,4 @@ const GentlemenSlides = ({
   );
 };
 
-export default GentlemenSlides;
+export default AmazingApparel;

@@ -1,9 +1,8 @@
 import React from "react";
-import "./TeamSection.css";
-import member1 from "../../assets/team-member-1.jpg";
-import member2 from "../../assets/team-member-2.png";
-import member3 from "../../assets/team-member-2.jpg";
-import member4 from "../../assets/team-member-3.jpg";
+import member1 from "../assets/team-member-1.jpg";
+import member2 from "../assets/team-member-2.png";
+import member3 from "../assets/team-member-2.jpg";
+import member4 from "../assets/team-member-3.jpg";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const teamData = [

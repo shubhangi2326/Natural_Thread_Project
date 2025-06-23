@@ -1,6 +1,5 @@
 import React from "react";
-import "./NewArticlesSection.css";
-import { articles } from "../../articles";
+import { articles } from "../articles";
 import { FaUserAlt, FaRegCommentDots, FaShareAlt } from "react-icons/fa";
 
 const NewArticlesSection = () => {

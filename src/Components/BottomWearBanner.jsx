@@ -1,6 +1,5 @@
 import React from "react";
-import "./BottomWearBanner.css";
-import banner from '../../assets/Nt-banner1.jpeg'
+import banner from '../assets/Nt-banner1.jpeg'
 
 const BottomWearBanner = () => {
   return (

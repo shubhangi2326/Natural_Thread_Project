@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar";
 import AppRoutes from "./AppRoutes";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer";
 
 import ScrollToTop from "./Components/ScrollToTop";
 

@@ -3,8 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./PersonalCare.css";
-import { PersonalCare_slides } from "../../slides";
+import { PersonalCare_slides } from "../slides";
 
 const PersonalCare = ({
   autoplayDelay = 3000,

@@ -1,9 +1,8 @@
 import React from 'react';
-import './FeaturesSection.css';
-import shoping from '../../assets/free_shoping.svg'
-import support_team from '../../assets/support_team.svg'
-import payment from '../../assets/payment.svg'
-import right from '../../assets/safe_or_secure.svg'
+import shoping from '../assets/free_shoping.svg'
+import support_team from '../assets/support_team.svg'
+import payment from '../assets/payment.svg'
+import right from '../assets/safe_or_secure.svg'
 
 const FeaturesSection = () => {
   const features = [

@@ -222,14 +222,12 @@ h1, h2, h3 {
     gap: var(--spacing-lg);
   }
   
-  .apparel-text {
-    width: 20%;
-    flex: 1;
-    font-size: 35px;
-    font-weight: var(--fw-bold);
-    color: var(--color-black);
+  .apparel-text h2 { 
+  font-size: 48px;
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  color: var(--color-text-dark);
   }
-
   .right{
     width: 80%;
     background-color: var(--bg-light-pink);
@@ -248,24 +246,35 @@ h1, h2, h3 {
     border-radius: var(--radius-sm);
     object-fit: cover;
   }
-@media (max-width: 768px) {
-  .amazing-apparel-section {
-    flex-direction: column;
-    padding: var(--spacing-md);
-    gap: var(--spacing-md);
-  }
 
-  .apparel-text,
+
+@media (max-width: 768px) {
+ .amazing-apparel-section {
+    flex-direction: column;
+    padding: var(--spacing-lg) var(--spacing-md);
+    gap: var(--spacing-md-2);
+  }
+ .apparel-text,
   .right {
     width: 100%;
-  }
-
-  .apparel-text {
     text-align: center;
+  }
+  .apparel-text h2 {
+    font-size: 36px;
+  }
+  .right {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .amazing-apparel-section{
+    padding: var(--spacing-md) 15px;
+  }
+   .apparel-text h2 {
     font-size: 28px;
   }
-
-  .apparel-carousel {
+  .right {
     padding: 15px;
   }
 }
@@ -368,8 +377,8 @@ h1, h2, h3 {
 }
 
 .swiper-pagination-bullet {
-  background: var(--color-pagination-inactive);
-  opacity: 1;
+ background-color: #000000 !important;
+   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
